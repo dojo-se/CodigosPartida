@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:shelldoc xmlns:s="http://www.forestent.com/projects/shelldoc/xsl/2005.0">
+<s:header>
+shUnit 2.1.5
+Shell Unit Test Framework
+
+http://shunit2.googlecode.com/
+
+written by Kate Ward &lt;kate.ward@forestent.com&gt;
+released under the LGPL
+
+This module implements a xUnit based unit test framework similar to JUnit.
+</s:header>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertEquals</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>expected</parameter></paramdef>
+      <paramdef>string <parameter>actual</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that <emphasis>expected</emphasis> and
+  <emphasis>actual</emphasis> are equal to one another. The message is
+  optional.</para>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertNotEquals</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>unexpected</parameter></paramdef>
+      <paramdef>string <parameter>actual</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that <emphasis>unexpected</emphasis> and
+  <emphasis>actual</emphasis> are <emphasis role="strong">not</emphasis>
+  equal to one another. The message is optional.</para>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertNull</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>value</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that <emphasis>value</emphasis> is <literal>null</literal>,
+  or in shell terms a zero-length string. The message is optional.</para>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertNotNull</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>value</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that <emphasis>value</emphasis> is <emphasis
+  role="strong">not</emphasis> <literal>null</literal>, or in shell terms not
+  a zero-length string. The message is optional.</para>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertSame</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>expected</parameter></paramdef>
+      <paramdef>string <parameter>actual</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function is functionally equivalent to
+  <function>assertEquals</function>.</para>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertNotSame</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>unexpected</parameter></paramdef>
+      <paramdef>string <parameter>actual</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that <emphasis>unexpected</emphasis> and
+  <emphasis>actual</emphasis> are <emphasis role="strong">not</emphasis>
+  equal to one another. The message is optional.</para>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertTrue</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>condition</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that a given shell test condition is true. The message is
+  optional.</para>
+  <para>Testing whether something is true or false is easy enough by using
+  the assertEquals/assertNotSame functions. Shell supports much more
+  complicated tests though, and a means to support them was needed. As such,
+  this function tests that conditions are true or false through evaluation
+  rather than just looking for a true or false.</para>
+  <funcsynopsis>
+    The following test will succeed: <funcsynopsisinfo>assertTrue "[ 34 -gt 23 ]"</funcsynopsisinfo>
+    The folloing test will fail with a message: <funcsynopsisinfo>assertTrue "test failed" "[ -r '/non/existant/file' ]"</funcsynopsisinfo>
+  </funcsynopsis>
+</entry>
+</s:function>
+<s:function group="asserts">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>assertFalse</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>condition</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Asserts that a given shell test condition is false. The message is
+  optional.</para>
+  <para>Testing whether something is true or false is easy enough by using
+  the assertEquals/assertNotSame functions. Shell supports much more
+  complicated tests though, and a means to support them was needed. As such,
+  this function tests that conditions are true or false through evaluation
+  rather than just looking for a true or false.</para>
+  <funcsynopsis>
+    The following test will succeed: <funcsynopsisinfo>assertFalse "[ 'apples' = 'oranges' ]"</funcsynopsisinfo>
+    The folloing test will fail with a message: <funcsynopsisinfo>assertFalse "test failed" "[ 1 -eq 1 -a 2 -eq 2 ]"</funcsynopsisinfo>
+  </funcsynopsis>
+</entry>
+</s:function>
+<s:function group="failures">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>fail</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Fails the test immediately, with the optional message.</para>
+</entry>
+</s:function>
+<s:function group="failures">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>failNotEquals</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>unexpected</parameter></paramdef>
+      <paramdef>string <parameter>actual</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Fails the test if <emphasis>unexpected</emphasis> and
+  <emphasis>actual</emphasis> are <emphasis role="strong">not</emphasis>
+  equal to one another. The message is optional.</para>
+</entry>
+</s:function>
+<s:function group="failures">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>failSame</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Indicate test failure because arguments were the same. The message is
+  optional.</para>
+</entry>
+</s:function>
+<s:function group="failures">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>failNotSame</function></funcdef>
+      <paramdef>string <parameter>[message]</parameter></paramdef>
+      <paramdef>string <parameter>expected</parameter></paramdef>
+      <paramdef>string <parameter>actual</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>Indicate test failure because arguments were not the same. The
+  message is optional.</para>
+</entry>
+</s:function>
+<s:function group="skipping">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>startSkipping</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function forces the remaining assert and fail functions to be
+  "skipped", i.e. they will have no effect. Each function skipped will be
+  recorded so that the total of asserts and fails will not be altered.</para>
+</entry>
+</s:function>
+<s:function group="skipping">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>endSkipping</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function returns calls to the assert and fail functions to their
+  default behavior, i.e. they will be called.</para>
+</entry>
+</s:function>
+<s:function group="skipping">
+<entry align="right">
+  <emphasis>boolean</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>isSkipping</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function returns the state of skipping.</para>
+</entry>
+</s:function>
+<s:function group="suites">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>suite</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function can be optionally overridden by the user in their test
+  suite.</para>
+  <para>If this function exists, it will be called when
+  <command>shunit2</command> is sourced. If it does not exist, shUnit2 will
+  search the parent script for all functions beginning with the word
+  <literal>test</literal>, and they will be added dynamically to the test
+  suite.</para>
+</entry>
+</s:function>
+<s:function group="suites">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>suite_addTest</function></funcdef>
+      <paramdef>string <parameter>function</parameter></paramdef>
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function adds a function name to the list of tests scheduled for
+  execution as part of this test suite. This function should only be called
+  from within the <function>suite()</function> function.</para>
+</entry>
+</s:function>
+<s:function group="suites">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>oneTimeSetUp</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function can be be optionally overridden by the user in their
+  test suite.</para>
+  <para>If this function exists, it will be called once before any tests are
+  run. It is useful to prepare a common environment for all tests.</para>
+</entry>
+</s:function>
+<s:function group="suites">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>oneTimeTearDown</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function can be be optionally overridden by the user in their
+  test suite.</para>
+  <para>If this function exists, it will be called once after all tests are
+  completed. It is useful to clean up the environment after all tests.</para>
+</entry>
+</s:function>
+<s:function group="suites">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>setUp</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function can be be optionally overridden by the user in their
+  test suite.</para>
+  <para>If this function exists, it will be called before each test is run.
+  It is useful to reset the environment before each test.</para>
+</entry>
+</s:function>
+<s:function group="suites">
+<entry align="right">
+  <emphasis>void</emphasis>
+</entry>
+<entry>
+  <funcsynopsis>
+    <funcprototype>
+      <funcdef><function>tearDown</function></funcdef>
+      <paramdef />
+    </funcprototype>
+  </funcsynopsis>
+  <para>This function can be be optionally overridden by the user in their
+  test suite.</para>
+  <para>If this function exists, it will be called after each test completes.
+  It is useful to clean up the environment after each test.</para>
+</entry>
+</s:function>
+</s:shelldoc>
