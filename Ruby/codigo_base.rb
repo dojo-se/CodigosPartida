@@ -9,13 +9,13 @@
 require 'test/unit'
 
 class ProblemaParaResolverTest < Test::Unit::TestCase
-	def test_simples
-		assert_equal(true, ProblemaParaResolver.problema)
-	end
+  def test_simples
+    assert_equal(true, ProblemaParaResolver.problema)
+  end
 end
 
 class ProblemaParaResolver
-	def self.problema
-		true
-	end
+  def self.problema
+    true
+  end
 end
