@@ -1,0 +1,11 @@
+<uses-sdk ... />
+
+<instrumentation
+        android:targetPackage="<nome do pacote>"
+        android:name="android.test.InstrumentationTestRunner" />
+
+<application
+	...
+	<uses-library android:name="android.test.runner" />
+	...
+</application>
