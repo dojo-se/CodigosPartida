@@ -8,7 +8,6 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 	}
 
 	public void setUp() throws Exception {
-		solo = new Solo(getInstrumentation());
 		mActivity = getActivity();
 		mText = (TextView) findViewById(R.id.label_hello_world);
 	}
