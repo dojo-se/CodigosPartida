@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+	Esqueleto de código TypeScript para uso no Dojo-SE (Ou em outros lugares)
+	Escrito por Fernando Mendonça de Almeida <fernando.m.al.91@gmail.com>.
+
+	Para executar os testes compile os arquivos .ts e abra este arquivo .html
+
+	Comando para compilar:
+		tsc --module amd Problem.ts tests.ts
+
+	Para instalar o tsc:
+		npm install -g typescript
+-->
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Codigo Partida Dojo-SE</title>
+	<link rel="stylesheet" href="bower_components/qunit/qunit/qunit.css" />
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script type="text/javascript" src="bower_components/qunit/qunit/qunit.js"></script>
+	<script data-main="js/tests" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>
