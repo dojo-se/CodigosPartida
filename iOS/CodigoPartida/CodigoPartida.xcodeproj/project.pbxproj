@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		575D72071991448C00E04917 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D72061991448C00E04917 /* main.m */; };
+		575D720A1991448C00E04917 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D72091991448C00E04917 /* AppDelegate.m */; };
+		575D720D1991448C00E04917 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D720C1991448C00E04917 /* ViewController.m */; };
+		575D72101991448C00E04917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575D720E1991448C00E04917 /* Main.storyboard */; };
+		575D72121991448C00E04917 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575D72111991448C00E04917 /* Images.xcassets */; };
+		575D721E1991448C00E04917 /* CodigoPartidaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D721D1991448C00E04917 /* CodigoPartidaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		575D72181991448C00E04917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 575D71F91991448C00E04917 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 575D72001991448C00E04917;
+			remoteInfo = CodigoPartida;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		575D72011991448C00E04917 /* CodigoPartida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodigoPartida.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		575D72051991448C00E04917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575D72061991448C00E04917 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		575D72081991448C00E04917 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		575D72091991448C00E04917 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		575D720B1991448C00E04917 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		575D720C1991448C00E04917 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		575D720F1991448C00E04917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		575D72111991448C00E04917 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		575D72171991448C00E04917 /* CodigoPartidaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodigoPartidaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575D721C1991448C00E04917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575D721D1991448C00E04917 /* CodigoPartidaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodigoPartidaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		575D71FE1991448C00E04917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575D72141991448C00E04917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		575D71F81991448C00E04917 = {
+			isa = PBXGroup;
+			children = (
+				575D72031991448C00E04917 /* CodigoPartida */,
+				575D721A1991448C00E04917 /* CodigoPartidaTests */,
+				575D72021991448C00E04917 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		575D72021991448C00E04917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				575D72011991448C00E04917 /* CodigoPartida.app */,
+				575D72171991448C00E04917 /* CodigoPartidaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		575D72031991448C00E04917 /* CodigoPartida */ = {
+			isa = PBXGroup;
+			children = (
+				575D72081991448C00E04917 /* AppDelegate.h */,
+				575D72091991448C00E04917 /* AppDelegate.m */,
+				575D720B1991448C00E04917 /* ViewController.h */,
+				575D720C1991448C00E04917 /* ViewController.m */,
+				575D720E1991448C00E04917 /* Main.storyboard */,
+				575D72111991448C00E04917 /* Images.xcassets */,
+				575D72041991448C00E04917 /* Supporting Files */,
+			);
+			path = CodigoPartida;
+			sourceTree = "<group>";
+		};
+		575D72041991448C00E04917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				575D72051991448C00E04917 /* Info.plist */,
+				575D72061991448C00E04917 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		575D721A1991448C00E04917 /* CodigoPartidaTests */ = {
+			isa = PBXGroup;
+			children = (
+				575D721D1991448C00E04917 /* CodigoPartidaTests.m */,
+				575D721B1991448C00E04917 /* Supporting Files */,
+			);
+			path = CodigoPartidaTests;
+			sourceTree = "<group>";
+		};
+		575D721B1991448C00E04917 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				575D721C1991448C00E04917 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		575D72001991448C00E04917 /* CodigoPartida */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575D72211991448C00E04917 /* Build configuration list for PBXNativeTarget "CodigoPartida" */;
+			buildPhases = (
+				575D71FD1991448C00E04917 /* Sources */,
+				575D71FE1991448C00E04917 /* Frameworks */,
+				575D71FF1991448C00E04917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodigoPartida;
+			productName = CodigoPartida;
+			productReference = 575D72011991448C00E04917 /* CodigoPartida.app */;
+			productType = "com.apple.product-type.application";
+		};
+		575D72161991448C00E04917 /* CodigoPartidaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 575D72241991448C00E04917 /* Build configuration list for PBXNativeTarget "CodigoPartidaTests" */;
+			buildPhases = (
+				575D72131991448C00E04917 /* Sources */,
+				575D72141991448C00E04917 /* Frameworks */,
+				575D72151991448C00E04917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				575D72191991448C00E04917 /* PBXTargetDependency */,
+			);
+			name = CodigoPartidaTests;
+			productName = CodigoPartidaTests;
+			productReference = 575D72171991448C00E04917 /* CodigoPartidaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		575D71F91991448C00E04917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Dojo-SE";
+				TargetAttributes = {
+					575D72001991448C00E04917 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					575D72161991448C00E04917 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 575D72001991448C00E04917;
+					};
+				};
+			};
+			buildConfigurationList = 575D71FC1991448C00E04917 /* Build configuration list for PBXProject "CodigoPartida" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 575D71F81991448C00E04917;
+			productRefGroup = 575D72021991448C00E04917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				575D72001991448C00E04917 /* CodigoPartida */,
+				575D72161991448C00E04917 /* CodigoPartidaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		575D71FF1991448C00E04917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D72101991448C00E04917 /* Main.storyboard in Resources */,
+				575D72121991448C00E04917 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575D72151991448C00E04917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		575D71FD1991448C00E04917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D720D1991448C00E04917 /* ViewController.m in Sources */,
+				575D720A1991448C00E04917 /* AppDelegate.m in Sources */,
+				575D72071991448C00E04917 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575D72131991448C00E04917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575D721E1991448C00E04917 /* CodigoPartidaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		575D72191991448C00E04917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 575D72001991448C00E04917 /* CodigoPartida */;
+			targetProxy = 575D72181991448C00E04917 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		575D720E1991448C00E04917 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575D720F1991448C00E04917 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		575D721F1991448C00E04917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		575D72201991448C00E04917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		575D72221991448C00E04917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CodigoPartida/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		575D72231991448C00E04917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CodigoPartida/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		575D72251991448C00E04917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodigoPartidaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodigoPartida.app/CodigoPartida";
+			};
+			name = Debug;
+		};
+		575D72261991448C00E04917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodigoPartidaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodigoPartida.app/CodigoPartida";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		575D71FC1991448C00E04917 /* Build configuration list for PBXProject "CodigoPartida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575D721F1991448C00E04917 /* Debug */,
+				575D72201991448C00E04917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		575D72211991448C00E04917 /* Build configuration list for PBXNativeTarget "CodigoPartida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575D72221991448C00E04917 /* Debug */,
+				575D72231991448C00E04917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		575D72241991448C00E04917 /* Build configuration list for PBXNativeTarget "CodigoPartidaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575D72251991448C00E04917 /* Debug */,
+				575D72261991448C00E04917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 575D71F91991448C00E04917 /* Project object */;
+}
