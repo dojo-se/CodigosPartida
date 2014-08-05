@@ -2,6 +2,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 
 	MainActivity mActivity;
 	TextView mText;
+	Button mbutton;
 
 	public MainActivityTest() {
 		super(MainActivity.class);
@@ -14,5 +15,12 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
 
 	public testeSimples(){
 		asserEquals(mText.getText(),"Hello world!");
+	}
+	
+	//Teste de eventos após clicar em um botão.
+	@UiThreadTest
+	public void testeMudancaLabel(){
+		mbotao.performClick();
+		assertEquals(mtext.getText(), "Good bye world!");
 	}
 }
