@@ -67,6 +67,8 @@ O XCTest suporta as seguintes operações:
 
 ## Vídeos, Slides e Tutoriais
 
+### Vídeos
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=amSApTmxqrc
 " target="_blank"><img src="http://s28.postimg.org/l6maq2hh9/Screen_Shot_2014_08_07_at_10_30_18_AM.png"
 alt="Testing with the XCTest" width="240" height="180" border="10" /></a>
@@ -75,5 +77,15 @@ alt="Testing with the XCTest" width="240" height="180" border="10" /></a>
 " target="_blank"><img src="http://s17.postimg.org/fv2sx7uqn/Screen_Shot_2014_08_07_at_10_33_26_AM.png"
 alt="Testing in XCode 5 " width="240" height="180" border="10" /></a>
 
+
+### Links
+
 [XCTests and TableView](http://blog.typpz.com/2014/04/27/xcode-5-test-uitableview-with-xctest-framework/)
-https://www.youtube.com/watch?v=8cpEIik-FZM
+
+### Slides
+
+[Testing in Xcode](http://rubbercitywizards.com/stuff/files/2013-10-testing-xcode-5-cocoa-slopes.pdf)
+
+### Projetos de Exemplo
+
+[https://github.com/jonathanpenn/Xcode5Testing](https://github.com/jonathanpenn/Xcode5Testing)
