@@ -1,3 +1,7 @@
+# Dicas para utilização do Xcode e XCTest
+
+O XCTest é o framework de testes nativos do Xcode. Existem outras alternativas, mas esta é a oficial.
+
 O XCTest suporta as seguintes operações:
 
 * XCTFail (format…)
@@ -60,3 +64,9 @@ O XCTest suporta as seguintes operações:
     XCTAssertTrue([self.vc tableView:self.vc.tableView numberOfRowsInSection:0]==expectedRows, @"A tabela tem %ld linhas mas deveria ter %ld", (long)[self.vc tableView:self.vc.tableView numberOfRowsInSection:0], (long)expectedRows);
 }
 ```
+
+## Vídeos, Slides e Tutoriais
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=amSApTmxqrc
+" target="_blank"><img src="http://img.youtube.com/vi/amSApTmxqrcE/0.jpg"
+alt="XCtests" width="240" height="180" border="10" /></a>
