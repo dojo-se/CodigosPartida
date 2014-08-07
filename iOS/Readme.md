@@ -65,6 +65,16 @@ O XCTest suporta as seguintes operações:
 }
 ```
 
+## Realizando os testes
+
+Os testes podem ser rodados direto do XCode, através do menu Product -> Test. Também é possível rodar os testes através do atalho &#8984; + U.
+
+Se preferir, é possível utilizar alguma ferramenta de linha de comando. O XCTool é muito interessante. A sintaxe é similar a abaixo:
+
+```bash
+$ xctool -scheme CodigoPartida test -sdk iphonesimulator
+```
+
 ## Vídeos, Slides e Tutoriais
 
 ### Vídeos
