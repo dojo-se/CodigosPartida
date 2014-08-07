@@ -15,3 +15,48 @@ O XCTest suporta as seguintes operações:
 * XCTAssertNoThrow (expression, format…)
 * XCTAssertNoThrowSpecific (expression, specificException, format…)
 * XCTAssertNoThrowSpecificNamed (expression, specificExcepton, exceptionName, format…)
+
+
+## Pegando um View Controller do Storyboard
+
+```objective-c
+- (void)setUp
+{
+    [super setUp];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.vc = [storyboard instantiateViewControllerWithIdentifier:@"nomeDoViewController"];
+    [self.vc performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
+
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+```
+
+## Exemplos de XCTest
+
+```objective-c
+ - (void)testThatViewLoads
+{
+    // testa se uma view foi carregada
+    XCTAssertNotNil(self.vc.view, @"A View não foi iniciar corretamente");
+}
+
+- (void)testParentViewHasTableViewSubview
+{
+    // testa se existe uma tableview como subview
+    NSArray *subviews = self.vc.view.subviews;
+    XCTAssertTrue([subviews containsObject:self.vc.tableView], @"A view não tem uma tableView");
+}
+
+- (void)testThatTableViewLoads
+{
+    // testa se a tableview foi iniciada
+    XCTAssertNotNil(self.vc.tableView, @"TableView não foi iniciada");
+}
+
+- (void)testTableViewNumberOfRowsInSection
+{
+    // testa a quantidade de linhas de uma tabela
+    NSInteger expectedRows = 15;
+    XCTAssertTrue([self.vc tableView:self.vc.tableView numberOfRowsInSection:0]==expectedRows, @"A tabela tem %ld linhas mas deveria ter %ld", (long)[self.vc tableView:self.vc.tableView numberOfRowsInSection:0], (long)expectedRows);
+}
+```
