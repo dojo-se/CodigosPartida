@@ -1,0 +1,14 @@
+{
+  "name": "node-tdd",
+  "version": "1.0.0",
+  "description": "NodeJS minimal TDD project",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec",
+    "install": "npm install -g mocha istanbul"
+  },
+  "author": "Fernando Mendonça de Almeida",
+  "license": "GPL"
+}
