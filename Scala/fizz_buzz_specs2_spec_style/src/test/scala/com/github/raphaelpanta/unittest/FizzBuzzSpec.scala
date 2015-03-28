@@ -12,15 +12,15 @@ class FizzBuzzSpec extends Specification {
   val fizzBuzz = new FizzBuzz
   def is() =
     s2"""
-      This is a specification of FizzBuzz
-        When a number is divisible 
-          by 3 it should print Fizz $shouldBeFizz
-          by 5 it should print Buzz $shouldBeBuzz
-          by 3 and 5 it should print FizzBuzz $shouldBeFizzBuzz
-        When a number is not divisible 
-          by 3 or 5 it should print the number $shouldBeANumber
-        From a list of integer 1, 2, 3, 15, 10, 30
-          it should print a list of Strings like 1, 2, Fizz, FizzBuzz, Buzz, FizzBuzz $shouldPrintAFizzBuzzList
+	  Esta é um especificação de FizzBuzz
+	    Quando um número é divisível
+		  por 3 deve imprimir Fizz $shouldBeFizz
+		  por 5 deve imprimir Buzz $shouldBeBuzz
+		  pro 3 e por 5 deve imprimir FizzBuzz $shouldBeFizzBuzz
+        Quando um número não é divisível
+		  por 3 ou por 5 deve imprimir o próprio número $shouldBeANumber
+        De uma lista de inteiros 1, 2, 3, 15, 10, 30
+          deve imprimir uma lista de strings como 1, 2, Fizz, FizzBuzz, Buzz, FizzBuzz $shouldPrintAFizzBuzzList
       """
 
   def shouldBeFizz = {
