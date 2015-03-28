@@ -1,15 +1,14 @@
 # WordWrapScala
-##A implementation of Word Wrap in Scala
+##Uma implementação de Quebra de linha em Scala
 
-Wrap words for a given column. If wrapper function encounters a ' ' character 
-and if the next word is above the number of column is greater 
-than columns que word should be wrapped to next line
+Quebra palavras dado um certo número de colunas. A função de quebrar a linha encontra um caractere ' '
+e caso a próxima palavra seja maior que o número de colunas a linha deve ser quebrada neste ponto.
 
-###Example: 
+###Examplo: 
 
 >"Um pequeno jabuti xereta viu dez cegonhas felizes."
 
-will be wrapped like 
+Será quebrado como o seguinte:
 
 >"Um pequeno jabuti
 
