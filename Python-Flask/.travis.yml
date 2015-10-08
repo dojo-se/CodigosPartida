@@ -1,0 +1,20 @@
+language: python
+python: 3.4
+sudo: false
+
+# prepare virtualenv
+before_install:
+  - python -m venv .
+  - source bin/activate
+
+# install dependencies
+install:
+  - python setup.py develop
+  - pip install coveralls
+
+# run tests and coverage
+script:
+  - python tests.py
+  - coverage run tests.py
+
+after_success: coveralls
